@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquerries.css">
     <title>Tamenou Fryde | FullStack Developer</title>
-     <link rel="icon" type="image/png" href="./assets/arrow.png">
 </head>
 <body>
     
     <nav id="desktop-nav">
-        <div class="logo">Fletcher T</div>
+        <div class="logo">Tamenou Fryde</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+                <li><a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a></li>
+                <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
+                <li><a href="#contact" data-en="Contacts" data-fr="Contact">Contacts</a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">FR</button></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
             </ul>
         </div>
     </nav>
@@ -30,32 +31,38 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+                <li><a href="#about" onclick="toggleMenu()" data-en="About" data-fr="À propos">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" data-en="Experience" data-fr="Expérience">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" data-en="Projects" data-fr="Projets">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" data-en="Contacts" data-fr="Contact">Contacts</a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">FR</button></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
             </div>
         </div>
     </nav>
 
     <section id="profile">
         <div class="profile__image">
-            <img src="./assets/profile-pic-3.png" alt="Fletcher T profile picture">
+            <img src="./assets/profile-pic-3.png" alt="Fletcher T profile picture" class="profile-pic"/>
         </div>
     <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Fletcher T</h1>
-            <p class="section__text__p2">Frontend Developer</p>
+            <p class="section__text__p1" data-en="Hello I'm" data-fr="Bonjour, je suis">Hello I'm</p>
+            <h1 class="title">Tamenou Fryde</h1>
+            <p class="section__text__p2" data-en="FullStack Developer" data-fr="Développeur FullStack">FullStack Developer</p>
         
         <div class="btn-container">
             <button 
                 class="btn btn-color-2"
-                onclick="window.open('./assets/resume.pdf')">
+                onclick="window.open('./assets/resume.pdf')"
+                data-en="Download CV"
+                data-fr="Télécharger CV">
                 Download CV
             </button>
             <button
              class="btn btn-color-1"
-             onclick="location.href='./#contact'" >
+             onclick="location.href='./#contact'"
+             data-en="Contact Info"
+             data-fr="Informations de contact" >
                 Contact Info
             </button>
         </div>
@@ -75,8 +82,8 @@
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1" data-en="Get To Know More" data-fr="En savoir plus">Get To Know More</p>
+        <h1 class="title" data-en="About Me" data-fr="À propos de moi">About Me</h1>
         <div class="section-container">
             <div class="profile__image">
                 <img
@@ -90,19 +97,19 @@
                         <img src="./assets/experience.png"
                          alt="expereience icon"
                          class="icon" />
-                         <h3>Experience</h3>
-                         <p>1+ years <br> Frontend developement</p>
+                         <h3 data-en="Experience" data-fr="Expérience">Experience</h3>
+                         <p data-en="2+ years Frontend and Backend developement" data-fr="2+ ans Développement Frontend et Backend"></p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png"
                         alt="education icon"
                         class="icon" />
-                        <h3>Education</h3>
-                        <p>GCE A/l in Arts <br>D.U.T in Software Engineering</p>
+                        <h3 data-en="Education" data-fr="Formation">Education</h3>
+                        <p data-en="GCE A/l in Arts, D.U.T en Genie Informatique, Licence Technologique en Genie Logiciel" data-fr="GCE A/l en Arts, D.U.T en Génie Informatique,  Licence Technologique en Génie Logiciel"></p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
+                    <p data-en="I am a bilingual developer fluent in English and French, passionate about building modern, user-friendly applications. With a growing expertise in React Native and JavaScript, I enjoy transforming ideas into functional, clean, and responsive code. My ability to communicate in two languages allows me to collaborate with international teams, bridge gaps, and contribute to diverse projects. I'm continuously learning, improving, and excited to take on new challenges that help me grow both technically and personally." data-fr="Je suis un développeur bilingue maîtrisant l'anglais et le français, passionné par la création d'applications modernes et conviviales. Avec une expertise croissante en React Native et JavaScript, j'aime transformer des idées en code fonctionnel, propre et réactif. Ma capacité à communiquer dans deux langues me permet de collaborer avec des équipes internationales, de combler les écarts et de contribuer à des projets diversifiés. J'apprends continuellement, m'améliore et suis enthousiaste à relever de nouveaux défis qui m'aident à grandir techniquement et personnellement.">
                       I am a bilingual developer fluent in English and French, passionate about building modern,
                       user-friendly applications. With a growing expertise in React Native and JavaScript, I enjoy
                       transforming ideas into functional, clean, and responsive code. My ability to communicate in two
@@ -121,12 +128,12 @@
     </section>
     
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1" data-en="Explore My" data-fr="Découvrez mon">Explore My</p>
+        <h1 class="title" data-en="Experience" data-fr="Expérience">Experience</h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
+              <h2 class="experience-sub-title" data-en="Frontend Development" data-fr="Développement Frontend">Frontend Development</h2>
               <div class="article-container">
                 <article>
                   <img
@@ -136,7 +143,7 @@
                   />
                   <div>
                     <h3>HTML</h3>
-                    <p>Experienced</p>
+                    <p data-en="Experienced" data-fr="Expérimenté">Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -147,7 +154,7 @@
                   />
                   <div>
                     <h3>CSS</h3>
-                    <p>Intermediate</p>
+                    <p data-en="Intermediate" data-fr="Intermédiaire">Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -158,7 +165,7 @@
                   />
                   <div>
                     <h3>JavaScript</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
                 <article>
@@ -169,7 +176,7 @@
                   />
                   <div>
                     <h3>TypeScript</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
                 <article>
@@ -180,7 +187,7 @@
                   />
                   <div>
                     <h3>React JS</h3>
-                    <p>Intermediate</p>
+                    <p data-en="Intermediate" data-fr="Intermédiaire">Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -191,13 +198,13 @@
                   />
                   <div>
                     <h3> React Native</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
               </div>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Backend Development</h2>
+              <h2 class="experience-sub-title" data-en="Backend Development" data-fr="Développement Backend">Backend Development</h2>
               <div class="article-container">
                 <article>
                   <img
@@ -207,7 +214,7 @@
                   />
                   <div>
                     <h3>PostgreSQL</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
                 <article>
@@ -218,7 +225,7 @@
                   />
                   <div>
                     <h3>Node JS</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
                 <article>
@@ -229,7 +236,7 @@
                   />
                   <div>
                     <h3>Express JS</h3>
-                    <p>Intermediate</p>
+                    <p data-en="Intermediate" data-fr="Intermédiaire">Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -240,7 +247,7 @@
                   />
                   <div>
                     <h3>Git</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
                 <article>
@@ -251,7 +258,7 @@
                   />
                   <div>
                     <h3>Docker</h3>
-                    <p>Basic</p>
+                    <p data-en="Basic" data-fr="Basique">Basic</p>
                   </div>
                 </article>
               </div>
@@ -267,8 +274,8 @@
       </section>
 
       <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1" data-en="Browse My Recent" data-fr="Parcourez mes récents">Browse My Recent</p>
+        <h1 class="title" data-en="Projects" data-fr="Projets">Projects</h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container color-container">
@@ -297,7 +304,7 @@
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">School Management System</h2>
+              <h2 class="experience-sub-title project-title" data-en="School Management System" data-fr="Système de gestion scolaire">School Management System</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -315,7 +322,7 @@
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <h2 class="experience-sub-title project-title" data-en="Project Three" data-fr="Projet Trois">Project Three</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -326,7 +333,8 @@
                 <button
                   class="btn btn-color-2 project-btn"
                   onclick="location.href='https://github.com/'"
-                >
+                  data-en="Live Demo"
+                  data-fr="Démo en direct">
                   Live Demo
                 </button>
               </div>
@@ -342,8 +350,8 @@
       </section>
 
       <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1" data-en="Get in Touch" data-fr="Entrez en contact">Get in Touch</p>
+        <h1 class="title" data-en="Contact Me" data-fr="Contactez-moi">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
             <img
@@ -368,14 +376,14 @@
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+              <li><a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a></li>
+              <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
+              <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2025 Fletcher T. All Rights Reserved.</p>
+        <p data-en="Copyright &#169; 2025 Fletcher T. All Rights Reserved." data-fr="Copyright &#169; 2025 Fletcher T. Tous droits réservés.">Copyright &#169; 2025 Fletcher T. All Rights Reserved.</p>
       </footer>
 
     <script src="script.js"></script>
