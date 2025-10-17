@@ -175,7 +175,7 @@ a:hover{
     background-color: var(--bg-primary);
     width: fit-content;
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
     transition: all 0.3 ease-in-out;
     border: 1px solid var(--border-color);
     border-radius: 8px;
